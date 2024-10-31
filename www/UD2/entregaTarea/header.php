@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UD2 - Jose Manuel Iglesias Castro</title>
-    <link rel="stylesheet" href="www/UD2/entregaTarea/header.css"> 
+    <title>UD2 - Jose Manuel Iglesias Castro</title> 
 </head>
 <body>
     <header class="bg-primary text-white text-center py-3">
