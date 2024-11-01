@@ -1,13 +1,18 @@
 <?php
 include 'utils.php';
 
-$descripcion = $_POST['descripcion'];
-$estado = $_POST['estado'];
+$id = isset($_POST['id']) ? $_POST['id'] : null;
+$descripcion = isset($_POST['descripcion']) ? $_POST['descripcion'] : null;
+$estado = isset($_POST['estado']) ? $_POST['estado'] : null;
 
-if (guardarTarea($descripcion, $estado)) {
-    $mensaje = "Tarea guardada correctamente.";
+if ($id && $descripcion && $estado) {
+    if (guardarTarea($id, $descripcion, $estado)) {
+        $mensaje = "Tarea guardada correctamente.";
+    } else {
+        $mensaje = "Error al guardar la tarea. Revise los campos.";
+    }
 } else {
-    $mensaje = "Error al guardar la tarea. Revise los campos.";
+    $mensaje = "Todos los campos son obligatorios.";
 }
 ?>
 <!DOCTYPE html>

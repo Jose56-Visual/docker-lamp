@@ -6,6 +6,14 @@
     <title>Nueva Tarea</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nueva Tarea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 <body>
     <?php include 'header.php'; ?>
     <div class="container-fluid">
@@ -17,6 +25,10 @@
                 </div>
                 <div class="container">
                     <form class="mb-5" action="nueva.php" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label">ID</label>
+                            <input type="text" class="form-control" name="identificador">
+                        </div>
                         <div class="mb-3">
                             <label class="form-label">Descripción</label>
                             <input class="form-control" name="descripcion">

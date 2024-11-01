@@ -31,10 +31,8 @@ function esCampoValido($campo) {
 
 // Función que guarda una tarea de forma simulada
 function guardarTarea($id, $descripcion, $estado) {
-    $id = filtrarCampo($id);
     $descripcion = filtrarCampo($descripcion);
     $estado = filtrarCampo($estado);
-
     if (esCampoValido($descripcion) && esCampoValido($estado)) {
         $nuevaTarea = ["id" => $id, "descripcion" => $descripcion, "estado" => $estado];
         $GLOBALS['tareas'][] = $nuevaTarea;
